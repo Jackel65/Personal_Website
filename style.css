@@ -185,7 +185,7 @@ section{
     padding: 100px 0;;
 }
 
-.about, .services, .skills, .contact, footer{
+.about, .services, .skills, .contact, .project,  footer{
 
     font-family: 'Poppins', sans-serif;
 }
@@ -322,7 +322,7 @@ section .title::after{
 
 .services .title::after{
     background: #111;
-    content: "What I have done";
+    content: "What I can do";
     
 }
 
@@ -334,7 +334,6 @@ section .title::after{
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -423,6 +422,13 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;
 }
+.skills .skills-content .right .small{
+
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
 .skills .skills-content .right .bars{
     margin-bottom:  15px;
 }
@@ -484,22 +490,95 @@ section .title::after{
     width: 100%;
 }
 
+
+/* projects section styling */
+
+.project{
+    color: #fff;
+    background: #111;
+}
+
+
+.project .title::before{
+
+    background: #fff;
+}
+
+.project .title::after{
+    background: #111;
+    content: "What I have done";
+}
+
+.project .project-content{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+.project .project-content .card{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 560px;
+    height: 450px;
+    background: #222;
+    text-align: center;
+    border-radius: 100px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project .project-content .card .box{
+
+    transition: all 0.3s ease;
+
+}
+
+.project .project-content .card:hover{
+
+    background: #92A8D1;
+
+}
+
+.project .project-content .card:hover .box{
+
+    transform: scale(1.05);
+
+}
+
+.project .project-content .card i{
+
+    font-size: 50px;
+    color: #92A8D1;
+    transition: color 0.3s ease;
+}
+
+.project .project-content .card:hover i{
+
+    color: #fff;
+
+}
+
+.project .project-content .card .text{
+
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+
+
+
 /* Contact Section Styling */
 
 .contact .title::after{
-    content: "get in touch";
-}
-.contact .contact-content .column{
-    width: calc(50% - 30px);
-}
-.contact .contact-content .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.contact .title::after{
-    content: "get in touch";
+    content: "Get in touch";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
