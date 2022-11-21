@@ -32,7 +32,7 @@ $(document).ready(function(){
    //typing animation script
 
    var typed = new Typed(".typing", {
-       strings: ["Researcher", "Learner", "Statistician", "Coder", "Data Scientist", "Rubik's Cube Enthusiast", "Mathematician", "Teacher", "Machine-learning Specialist", "Full-Stack Developer", "Sports Analyst"],     
+       strings: ["Researcher", "Learner", "Statistician", "Programmer", "Data Scientist", "Rubik's Cube Enthusiast", "Mathematician", "Teacher", "Machine-learning Specialist", "Full-Stack Developer", "Sports Analyst"],     
        typeSpeed: 100,
        backspeed: 60,
        loop: true
