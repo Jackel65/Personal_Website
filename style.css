@@ -57,6 +57,17 @@ html{
     color: #fff;
 }
 
+
+.navbar .top-btns a{
+    color: #92A8D1;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .top-btns a{
+    color: #fff;
+}
+
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -85,7 +96,7 @@ html{
 .menu-btn{
 
     color: #fff;
-    font-size: 23px;
+    font-size: 20px;
     cursor: pointer;
     display: none;
 }
@@ -185,7 +196,7 @@ section{
     padding: 100px 0;;
 }
 
-.about, .services, .skills, .contact, .project,  footer{
+.about, .services, .skills, .contact, .project, .paper,  footer{
 
     font-family: 'Poppins', sans-serif;
 }
@@ -396,6 +407,7 @@ section .title::after{
 
 .skills .skills-content .left p{
     text-align: justify;
+    font-size: 19px;
 }
 
 .skills .skills-content .left a{
@@ -424,7 +436,7 @@ section .title::after{
 }
 .skills .skills-content .right .small{
 
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -574,13 +586,40 @@ section .title::after{
 
 
 
+/* Paper Section Styling */
 
+
+.paper .title::after{
+
+    content: "My publications";
+}
+
+.paper .paper-content .text{
+
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
 /* Contact Section Styling */
 
+.contact{
+    color: #fff;
+    background: #111;
+}
+
+.contact .title::before{
+
+    background: #fff;
+}
+
 .contact .title::after{
+    background: #111;
     content: "Get in touch";
 }
+
+
+
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
@@ -600,7 +639,7 @@ section .title::after{
 
 .contact .contact-content .info .sub-title{
 
-    color: #333;
+    color: #92A8D1;
 
 }
 
@@ -705,6 +744,11 @@ footer span a:hover{
 
     text-decoration: underline;
 }
+
+
+.bottom-one {
+    margin-bottom: 1cm;
+ }
 
 
 /* responsive media query start */
@@ -858,6 +902,24 @@ footer span a:hover{
 
         width: 100%;
         
+    }
+
+}
+
+@media (max-width: 580px){
+
+
+    .project .project-content .card{
+        margin-bottom: 20px;
+        margin-left: 10px;
+        width: 500px;
+        height: 250px;
+        background: #222;
+        text-align: center;
+        border-radius: 100px;
+        padding: 20px 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
     }
 
 }
