@@ -442,7 +442,7 @@ section .title::after{
 }
 
 .skills .skills-content .right .bars{
-    margin-bottom:  15px;
+    margin-bottom:  9px;
 }
 
 .skills .skills-content .right .info{
@@ -499,7 +499,13 @@ section .title::after{
     width: 10%;
 }
 .skills-content .right .sql::before{
-    width: 100%;
+    width: 40%;
+}
+.skills-content .right .nosql::before{
+    width: 80%;
+}
+.skills-content .right .sparql::before{
+    width: 30%;
 }
 
 
